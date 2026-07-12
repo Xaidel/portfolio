@@ -5,7 +5,6 @@ import ViewAllLink from './ViewAllLink'
 import CategoryTags from './CategoryTags'
 import SkillRow from './SkillRow'
 import ProjectPanel from './ProjectPanel'
-import ContactCTA from './ContactCTA'
 import { categories, type CategoryId } from '../data/categories'
 
 export default function CardBack() {
@@ -45,7 +44,6 @@ export default function CardBack() {
           onPrev={() => stepProject(-1)}
           onNext={() => stepProject(1)}
         />
-        <ContactCTA />
       </div>
       <CardSheen />
     </div>
