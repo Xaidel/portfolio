@@ -1,7 +1,12 @@
 import ContactRow from './ContactRow'
 import { EmailIcon, GitHubIcon, LinkedInIcon, MobileIcon } from './icons'
 
-export default function CardFooter() {
+export default function CardFooter({ contentRevealed = true }: { contentRevealed?: boolean }) {
+  const extraStyle = {
+    opacity: contentRevealed ? 1 : 0,
+    transform: contentRevealed ? 'translateY(0)' : 'translateY(10px)',
+  }
+
   return (
     <div className="flex w-full items-end justify-between">
       <div className="flex min-w-0 flex-1 flex-col items-start gap-[clamp(0.3125rem,1.3vw,0.5rem)]">
@@ -16,7 +21,11 @@ export default function CardFooter() {
             Software Engineer, AI &amp; Automation
           </p>
         </div>
-        <div className="flex w-full min-w-0 flex-col items-start gap-[clamp(0.1875rem,0.7vw,0.3125rem)]">
+        <div
+          data-card-extra
+          style={extraStyle}
+          className="flex w-full min-w-0 flex-col items-start gap-[clamp(0.1875rem,0.7vw,0.3125rem)]"
+        >
           <ContactRow icon={<MobileIcon className="h-3 w-3" />} text="09632530577" />
           <ContactRow
             icon={<EmailIcon className="h-3 w-3" />}
@@ -35,7 +44,11 @@ export default function CardFooter() {
           />
         </div>
       </div>
-      <div className="mb-[clamp(1rem,3.5vw,1.75rem)] flex shrink-0 flex-col items-end text-right">
+      <div
+        data-card-extra
+        style={extraStyle}
+        className="mb-[clamp(1rem,3.5vw,1.75rem)] flex shrink-0 flex-col items-end text-right"
+      >
         <p className="text-[clamp(0.4375rem,1.3vw,0.625rem)] text-[#E5D0AC]">
           Naga City, Philippines
         </p>

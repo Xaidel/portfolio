@@ -11,6 +11,12 @@ export default function DetailView({
   contentRevealed?: boolean
 }) {
   const headerStyle = headerHidden ? { opacity: 0 } : undefined
+  // The header row has its own bg-neutral-900 stripe and border — the card
+  // has no such stripe, so it has to disappear along with the text or it
+  // sits there as a visible seam through the whole box-morph animation.
+  const headerRowStyle = headerHidden
+    ? { backgroundColor: 'transparent', borderColor: 'transparent' }
+    : undefined
   const restStyle = {
     opacity: contentRevealed ? 1 : 0,
     transform: contentRevealed ? 'translateY(0)' : 'translateY(10px)',
@@ -33,7 +39,10 @@ export default function DetailView({
           data-shared="panel"
           className="overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-950 shadow-2xl shadow-black/40"
         >
-          <div className="flex flex-wrap items-center justify-between gap-3 border-b border-neutral-800 bg-neutral-900 px-[clamp(1rem,4vw,1.75rem)] py-[clamp(1.25rem,4vw,2rem)]">
+          <div
+            style={headerRowStyle}
+            className="flex flex-wrap items-center justify-between gap-3 border-b border-neutral-800 bg-neutral-900 px-[clamp(1rem,4vw,1.75rem)] py-[clamp(1.25rem,4vw,2rem)]"
+          >
             <div className="flex items-center gap-3">
               <LogoMark
                 data-shared="logo"

@@ -19,22 +19,38 @@ const TEXT_CONTENT: Record<Exclude<SharedKey, 'logo'>, string> = {
   tagline: 'Ship first, panic never.',
 }
 
-// Mirrors DetailView's classes for these nodes exactly, so the clone is
-// indistinguishable from the real element the instant it lands and swaps in.
-const TARGET_CLASS: Record<SharedKey, string> = {
+// Mirrors DetailView's classes for these nodes exactly, so on the way in
+// the clone is indistinguishable from the real element the instant it
+// lands and swaps in.
+const DETAIL_CLASS: Record<SharedKey, string> = {
   logo: 'text-[#F6CE71]',
   name: 'whitespace-nowrap font-mono text-[clamp(1.5rem,4vw,2.25rem)] font-bold tracking-wide text-[#E5D0AC]',
   title: 'whitespace-nowrap text-[clamp(0.875rem,2vw,1rem)] text-neutral-500',
   tagline: 'whitespace-nowrap text-sm uppercase tracking-[0.1em] text-[#F6CE71]',
 }
 
+// Mirrors CardHeader/CardFooter's classes, for the reverse trip — the card
+// uses a different font, weight, size and (for title/tagline) color than
+// the detail header, so the clone has to switch targets by direction or it
+// lands mid-flight looking like detail text and snaps to card text at the
+// very end.
+const CARD_CLASS: Record<SharedKey, string> = {
+  logo: 'text-[#F6CE71]',
+  name: 'whitespace-nowrap text-[clamp(0.8125rem,2.6vw,1rem)] font-semibold leading-tight text-[#E5D0AC]',
+  title: 'whitespace-nowrap text-[clamp(0.5625rem,1.7vw,0.75rem)] text-[#E5D0AC]',
+  tagline: 'whitespace-nowrap text-[clamp(0.5rem,1.3vw,0.6875rem)] font-medium uppercase tracking-[0.1em] text-[#E5D0AC]',
+}
+
 export default function TransitionOverlay({
   specs,
+  direction,
   onComplete,
 }: {
   specs: CloneSpec[]
+  direction: 'toDetail' | 'toCard'
   onComplete: () => void
 }) {
+  const targetClass = direction === 'toDetail' ? DETAIL_CLASS : CARD_CLASS
   const rootRef = useRef<HTMLDivElement>(null)
 
   useLayoutEffect(() => {
@@ -79,7 +95,7 @@ export default function TransitionOverlay({
         <div
           key={spec.key}
           data-clone={spec.key}
-          className={`absolute flex items-center ${TARGET_CLASS[spec.key]}`}
+          className={`absolute flex items-center ${targetClass[spec.key]}`}
           style={{
             left: spec.to.left,
             top: spec.to.top,

@@ -14,9 +14,11 @@ function canTilt() {
 export default function Card({
   flipped,
   onFlippedChange,
+  contentRevealed = true,
 }: {
   flipped: boolean
   onFlippedChange: (flipped: boolean) => void
+  contentRevealed?: boolean
 }) {
   const tiltRef = useRef<HTMLDivElement>(null)
   const pressingRef = useRef(false)
@@ -97,7 +99,7 @@ export default function Card({
           <div
             className={`absolute inset-0 [backface-visibility:hidden] ${flipped ? 'pointer-events-none' : ''}`}
           >
-            <CardFront />
+            <CardFront contentRevealed={contentRevealed} />
           </div>
           <div
             className={`absolute inset-0 [transform:rotateY(180deg)] [backface-visibility:hidden] ${flipped ? '' : 'pointer-events-none'}`}
