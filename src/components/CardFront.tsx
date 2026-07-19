@@ -10,6 +10,9 @@ export default function CardFront() {
       <div aria-hidden="true" className="flex-1" />
       <CardFooter />
       <FlipHint className="absolute top-[clamp(0.75rem,3vw,1.25rem)] left-[clamp(0.75rem,3vw,1.25rem)]" />
+      <p className="absolute right-[clamp(0.75rem,4vw,1.75rem)] bottom-[clamp(0.75rem,4vw,1.75rem)] text-[clamp(0.5625rem,1.6vw,0.6875rem)] text-neutral-500">
+        Press &apos;D&apos; for detailed mode
+      </p>
       <CardSheen />
     </div>
   )

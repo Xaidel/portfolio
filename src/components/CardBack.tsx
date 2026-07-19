@@ -7,7 +7,7 @@ import SkillRow from './SkillRow'
 import ProjectPanel from './ProjectPanel'
 import { categories, type CategoryId } from '../data/categories'
 
-export default function CardBack() {
+export default function CardBack({ onViewAll }: { onViewAll: () => void }) {
   const [categoryId, setCategoryId] = useState<CategoryId>(categories[0].id)
   const [projectIndex, setProjectIndex] = useState(0)
 
@@ -30,7 +30,7 @@ export default function CardBack() {
         <p className="text-center text-[clamp(0.4375rem,1.1vw,0.5625rem)] font-medium uppercase leading-none tracking-[0.1em] text-neutral-600">
           Featured projects
         </p>
-        <ViewAllLink />
+        <ViewAllLink onClick={onViewAll} />
       </div>
       <div className="flex min-h-0 flex-1 flex-col justify-between gap-[clamp(0.1875rem,1vw,0.5rem)]">
         <div className="flex flex-col gap-[clamp(0.1875rem,1vw,0.5rem)]">

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type KeyboardEvent, type MouseEvent } from 'react'
+import { useEffect, useRef, type KeyboardEvent, type MouseEvent } from 'react'
 import CardFront from './CardFront'
 import CardBack from './CardBack'
 
@@ -11,12 +11,19 @@ function canTilt() {
   )
 }
 
-export default function Card() {
-  const [flipped, setFlipped] = useState(false)
+export default function Card({
+  flipped,
+  onFlippedChange,
+  onViewAll,
+}: {
+  flipped: boolean
+  onFlippedChange: (flipped: boolean) => void
+  onViewAll: () => void
+}) {
   const tiltRef = useRef<HTMLDivElement>(null)
   const pressingRef = useRef(false)
 
-  const toggle = () => setFlipped((f) => !f)
+  const toggle = () => onFlippedChange(!flipped)
 
   const handleKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {
     if (e.key === 'Enter' || e.key === ' ') {
@@ -97,7 +104,7 @@ export default function Card() {
           <div
             className={`absolute inset-0 [transform:rotateY(180deg)] [backface-visibility:hidden] ${flipped ? '' : 'pointer-events-none'}`}
           >
-            <CardBack />
+            <CardBack onViewAll={onViewAll} />
           </div>
         </div>
       </div>
