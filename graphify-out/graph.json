@@ -1,0 +1,1000 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "eslint.config.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\eslint.config.js",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_eslint_config_js",
+      "community": 16,
+      "norm_label": "eslint.config.js"
+    },
+    {
+      "label": "vite.config.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\vite.config.ts",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_vite_config_ts",
+      "community": 17,
+      "norm_label": "vite.config.ts"
+    },
+    {
+      "label": "App.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\App.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "community": 0,
+      "norm_label": "app.tsx"
+    },
+    {
+      "label": "measureShared()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\App.tsx",
+      "source_location": "L15",
+      "id": "app_measureshared",
+      "community": 0,
+      "norm_label": "measureshared()"
+    },
+    {
+      "label": "enterDetail()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\App.tsx",
+      "source_location": "L43",
+      "id": "app_enterdetail",
+      "community": 0,
+      "norm_label": "enterdetail()"
+    },
+    {
+      "label": "backToCard()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\App.tsx",
+      "source_location": "L58",
+      "id": "app_backtocard",
+      "community": 0,
+      "norm_label": "backtocard()"
+    },
+    {
+      "label": "handleKeyDown()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\App.tsx",
+      "source_location": "L85",
+      "id": "app_handlekeydown",
+      "community": 0,
+      "norm_label": "handlekeydown()"
+    },
+    {
+      "label": "handleForwardLanded()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\App.tsx",
+      "source_location": "L152",
+      "id": "app_handleforwardlanded",
+      "community": 0,
+      "norm_label": "handleforwardlanded()"
+    },
+    {
+      "label": "handleReverseLanded()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\App.tsx",
+      "source_location": "L185",
+      "id": "app_handlereverselanded",
+      "community": 0,
+      "norm_label": "handlereverselanded()"
+    },
+    {
+      "label": "handleClonesComplete()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\App.tsx",
+      "source_location": "L203",
+      "id": "app_handleclonescomplete",
+      "community": 0,
+      "norm_label": "handleclonescomplete()"
+    },
+    {
+      "label": "main.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\main.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_main_tsx",
+      "community": 0,
+      "norm_label": "main.tsx"
+    },
+    {
+      "label": "Card.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\Card.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_card_tsx",
+      "community": 3,
+      "norm_label": "card.tsx"
+    },
+    {
+      "label": "canTilt()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\Card.tsx",
+      "source_location": "L7",
+      "id": "card_cantilt",
+      "community": 3,
+      "norm_label": "cantilt()"
+    },
+    {
+      "label": "Card()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\Card.tsx",
+      "source_location": "L14",
+      "id": "card_card",
+      "community": 3,
+      "norm_label": "card()"
+    },
+    {
+      "label": "CardBack.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CardBack.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_cardback_tsx",
+      "community": 5,
+      "norm_label": "cardback.tsx"
+    },
+    {
+      "label": "CardBack()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CardBack.tsx",
+      "source_location": "L9",
+      "id": "cardback_cardback",
+      "community": 5,
+      "norm_label": "cardback()"
+    },
+    {
+      "label": "CardFooter.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CardFooter.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_cardfooter_tsx",
+      "community": 6,
+      "norm_label": "cardfooter.tsx"
+    },
+    {
+      "label": "CardFooter()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CardFooter.tsx",
+      "source_location": "L4",
+      "id": "cardfooter_cardfooter",
+      "community": 6,
+      "norm_label": "cardfooter()"
+    },
+    {
+      "label": "CardFront.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CardFront.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_cardfront_tsx",
+      "community": 7,
+      "norm_label": "cardfront.tsx"
+    },
+    {
+      "label": "CardFront()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CardFront.tsx",
+      "source_location": "L6",
+      "id": "cardfront_cardfront",
+      "community": 7,
+      "norm_label": "cardfront()"
+    },
+    {
+      "label": "CardHeader.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CardHeader.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_cardheader_tsx",
+      "community": 8,
+      "norm_label": "cardheader.tsx"
+    },
+    {
+      "label": "CardHeader()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CardHeader.tsx",
+      "source_location": "L3",
+      "id": "cardheader_cardheader",
+      "community": 8,
+      "norm_label": "cardheader()"
+    },
+    {
+      "label": "CardSheen.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CardSheen.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_cardsheen_tsx",
+      "community": 9,
+      "norm_label": "cardsheen.tsx"
+    },
+    {
+      "label": "CardSheen()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CardSheen.tsx",
+      "source_location": "L1",
+      "id": "cardsheen_cardsheen",
+      "community": 9,
+      "norm_label": "cardsheen()"
+    },
+    {
+      "label": "CategoryTags.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CategoryTags.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_categorytags_tsx",
+      "community": 18,
+      "norm_label": "categorytags.tsx"
+    },
+    {
+      "label": "CircleTransition.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CircleTransition.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_circletransition_tsx",
+      "community": 1,
+      "norm_label": "circletransition.tsx"
+    },
+    {
+      "label": "prefersReducedMotion()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CircleTransition.tsx",
+      "source_location": "L34",
+      "id": "circletransition_prefersreducedmotion",
+      "community": 1,
+      "norm_label": "prefersreducedmotion()"
+    },
+    {
+      "label": "centerOf()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CircleTransition.tsx",
+      "source_location": "L38",
+      "id": "circletransition_centerof",
+      "community": 1,
+      "norm_label": "centerof()"
+    },
+    {
+      "label": "coveringDiameter()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CircleTransition.tsx",
+      "source_location": "L46",
+      "id": "circletransition_coveringdiameter",
+      "community": 1,
+      "norm_label": "coveringdiameter()"
+    },
+    {
+      "label": "mountOverlay()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CircleTransition.tsx",
+      "source_location": "L59",
+      "id": "circletransition_mountoverlay",
+      "community": 1,
+      "norm_label": "mountoverlay()"
+    },
+    {
+      "label": "paintFrame()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CircleTransition.tsx",
+      "source_location": "L99",
+      "id": "circletransition_paintframe",
+      "community": 1,
+      "norm_label": "paintframe()"
+    },
+    {
+      "label": "revealIncoming()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CircleTransition.tsx",
+      "source_location": "L109",
+      "id": "circletransition_revealincoming",
+      "community": 1,
+      "norm_label": "revealincoming()"
+    },
+    {
+      "label": "useCircleTransition()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CircleTransition.tsx",
+      "source_location": "L133",
+      "id": "circletransition_usecircletransition",
+      "community": 1,
+      "norm_label": "usecircletransition()"
+    },
+    {
+      "label": "ContactRow.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\ContactRow.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_contactrow_tsx",
+      "community": 10,
+      "norm_label": "contactrow.tsx"
+    },
+    {
+      "label": "ContactRow()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\ContactRow.tsx",
+      "source_location": "L3",
+      "id": "contactrow_contactrow",
+      "community": 10,
+      "norm_label": "contactrow()"
+    },
+    {
+      "label": "DetailView.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\DetailView.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_detailview_tsx",
+      "community": 11,
+      "norm_label": "detailview.tsx"
+    },
+    {
+      "label": "closeProject()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\DetailView.tsx",
+      "source_location": "L21",
+      "id": "detailview_closeproject",
+      "community": 11,
+      "norm_label": "closeproject()"
+    },
+    {
+      "label": "FlipHint.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\FlipHint.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_fliphint_tsx",
+      "community": 12,
+      "norm_label": "fliphint.tsx"
+    },
+    {
+      "label": "FlipHint()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\FlipHint.tsx",
+      "source_location": "L1",
+      "id": "fliphint_fliphint",
+      "community": 12,
+      "norm_label": "fliphint()"
+    },
+    {
+      "label": "icons.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\icons.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_icons_tsx",
+      "community": 2,
+      "norm_label": "icons.tsx"
+    },
+    {
+      "label": "LogoMark()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\icons.tsx",
+      "source_location": "L13",
+      "id": "icons_logomark",
+      "community": 2,
+      "norm_label": "logomark()"
+    },
+    {
+      "label": "PhoneIcon()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\icons.tsx",
+      "source_location": "L29",
+      "id": "icons_phoneicon",
+      "community": 2,
+      "norm_label": "phoneicon()"
+    },
+    {
+      "label": "MobileIcon()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\icons.tsx",
+      "source_location": "L37",
+      "id": "icons_mobileicon",
+      "community": 2,
+      "norm_label": "mobileicon()"
+    },
+    {
+      "label": "EmailIcon()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\icons.tsx",
+      "source_location": "L46",
+      "id": "icons_emailicon",
+      "community": 2,
+      "norm_label": "emailicon()"
+    },
+    {
+      "label": "WebsiteIcon()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\icons.tsx",
+      "source_location": "L55",
+      "id": "icons_websiteicon",
+      "community": 2,
+      "norm_label": "websiteicon()"
+    },
+    {
+      "label": "LinkedInIcon()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\icons.tsx",
+      "source_location": "L65",
+      "id": "icons_linkedinicon",
+      "community": 2,
+      "norm_label": "linkedinicon()"
+    },
+    {
+      "label": "GitHubIcon()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\icons.tsx",
+      "source_location": "L76",
+      "id": "icons_githubicon",
+      "community": 2,
+      "norm_label": "githubicon()"
+    },
+    {
+      "label": "NotchCard.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\NotchCard.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_notchcard_tsx",
+      "community": 4,
+      "norm_label": "notchcard.tsx"
+    },
+    {
+      "label": "round()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\NotchCard.tsx",
+      "source_location": "L29",
+      "id": "notchcard_round",
+      "community": 4,
+      "norm_label": "round()"
+    },
+    {
+      "label": "buildGeometry()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\NotchCard.tsx",
+      "source_location": "L33",
+      "id": "notchcard_buildgeometry",
+      "community": 4,
+      "norm_label": "buildgeometry()"
+    },
+    {
+      "label": "ProjectDetail.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\ProjectDetail.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_projectdetail_tsx",
+      "community": 13,
+      "norm_label": "projectdetail.tsx"
+    },
+    {
+      "label": "ProjectDetail()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\ProjectDetail.tsx",
+      "source_location": "L1",
+      "id": "projectdetail_projectdetail",
+      "community": 13,
+      "norm_label": "projectdetail()"
+    },
+    {
+      "label": "ProjectPanel.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\ProjectPanel.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_projectpanel_tsx",
+      "community": 19,
+      "norm_label": "projectpanel.tsx"
+    },
+    {
+      "label": "SkillRow.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\SkillRow.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_skillrow_tsx",
+      "community": 14,
+      "norm_label": "skillrow.tsx"
+    },
+    {
+      "label": "SkillRow()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\SkillRow.tsx",
+      "source_location": "L1",
+      "id": "skillrow_skillrow",
+      "community": 14,
+      "norm_label": "skillrow()"
+    },
+    {
+      "label": "TransitionOverlay.tsx",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\TransitionOverlay.tsx",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_components_transitionoverlay_tsx",
+      "community": 15,
+      "norm_label": "transitionoverlay.tsx"
+    },
+    {
+      "label": "TransitionOverlay()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\TransitionOverlay.tsx",
+      "source_location": "L44",
+      "id": "transitionoverlay_transitionoverlay",
+      "community": 15,
+      "norm_label": "transitionoverlay()"
+    },
+    {
+      "label": "categories.ts",
+      "file_type": "code",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\data\\categories.ts",
+      "source_location": "L1",
+      "id": "c_users_karl_documents_projects_portfolio_src_data_categories_ts",
+      "community": 20,
+      "norm_label": "categories.ts"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\App.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "_tgt": "app_measureshared",
+      "source": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "target": "app_measureshared",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\App.tsx",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "_tgt": "app_enterdetail",
+      "source": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "target": "app_enterdetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\App.tsx",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "_tgt": "app_backtocard",
+      "source": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "target": "app_backtocard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\App.tsx",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "_tgt": "app_handlekeydown",
+      "source": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "target": "app_handlekeydown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\App.tsx",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "_tgt": "app_handleforwardlanded",
+      "source": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "target": "app_handleforwardlanded",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\App.tsx",
+      "source_location": "L185",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "_tgt": "app_handlereverselanded",
+      "source": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "target": "app_handlereverselanded",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\App.tsx",
+      "source_location": "L203",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "_tgt": "app_handleclonescomplete",
+      "source": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "target": "app_handleclonescomplete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\main.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_main_tsx",
+      "_tgt": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "source": "c_users_karl_documents_projects_portfolio_src_app_tsx",
+      "target": "c_users_karl_documents_projects_portfolio_src_main_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\App.tsx",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_src": "app_handlekeydown",
+      "_tgt": "app_enterdetail",
+      "source": "app_enterdetail",
+      "target": "app_handlekeydown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\Card.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_card_tsx",
+      "_tgt": "card_cantilt",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_card_tsx",
+      "target": "card_cantilt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\Card.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_card_tsx",
+      "_tgt": "card_card",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_card_tsx",
+      "target": "card_card",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CardBack.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_cardback_tsx",
+      "_tgt": "cardback_cardback",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_cardback_tsx",
+      "target": "cardback_cardback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CardFooter.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_cardfooter_tsx",
+      "_tgt": "cardfooter_cardfooter",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_cardfooter_tsx",
+      "target": "cardfooter_cardfooter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CardFront.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_cardfront_tsx",
+      "_tgt": "cardfront_cardfront",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_cardfront_tsx",
+      "target": "cardfront_cardfront",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CardHeader.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_cardheader_tsx",
+      "_tgt": "cardheader_cardheader",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_cardheader_tsx",
+      "target": "cardheader_cardheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CardSheen.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_cardsheen_tsx",
+      "_tgt": "cardsheen_cardsheen",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_cardsheen_tsx",
+      "target": "cardsheen_cardsheen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CircleTransition.tsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_circletransition_tsx",
+      "_tgt": "circletransition_prefersreducedmotion",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_circletransition_tsx",
+      "target": "circletransition_prefersreducedmotion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CircleTransition.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_circletransition_tsx",
+      "_tgt": "circletransition_centerof",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_circletransition_tsx",
+      "target": "circletransition_centerof",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CircleTransition.tsx",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_circletransition_tsx",
+      "_tgt": "circletransition_coveringdiameter",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_circletransition_tsx",
+      "target": "circletransition_coveringdiameter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CircleTransition.tsx",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_circletransition_tsx",
+      "_tgt": "circletransition_mountoverlay",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_circletransition_tsx",
+      "target": "circletransition_mountoverlay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CircleTransition.tsx",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_circletransition_tsx",
+      "_tgt": "circletransition_paintframe",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_circletransition_tsx",
+      "target": "circletransition_paintframe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CircleTransition.tsx",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_circletransition_tsx",
+      "_tgt": "circletransition_revealincoming",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_circletransition_tsx",
+      "target": "circletransition_revealincoming",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\CircleTransition.tsx",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_circletransition_tsx",
+      "_tgt": "circletransition_usecircletransition",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_circletransition_tsx",
+      "target": "circletransition_usecircletransition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\ContactRow.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_contactrow_tsx",
+      "_tgt": "contactrow_contactrow",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_contactrow_tsx",
+      "target": "contactrow_contactrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\DetailView.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_detailview_tsx",
+      "_tgt": "detailview_closeproject",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_detailview_tsx",
+      "target": "detailview_closeproject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\FlipHint.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_fliphint_tsx",
+      "_tgt": "fliphint_fliphint",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_fliphint_tsx",
+      "target": "fliphint_fliphint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\icons.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_icons_tsx",
+      "_tgt": "icons_logomark",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_icons_tsx",
+      "target": "icons_logomark",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\icons.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_icons_tsx",
+      "_tgt": "icons_phoneicon",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_icons_tsx",
+      "target": "icons_phoneicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\icons.tsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_icons_tsx",
+      "_tgt": "icons_mobileicon",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_icons_tsx",
+      "target": "icons_mobileicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\icons.tsx",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_icons_tsx",
+      "_tgt": "icons_emailicon",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_icons_tsx",
+      "target": "icons_emailicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\icons.tsx",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_icons_tsx",
+      "_tgt": "icons_websiteicon",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_icons_tsx",
+      "target": "icons_websiteicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\icons.tsx",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_icons_tsx",
+      "_tgt": "icons_linkedinicon",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_icons_tsx",
+      "target": "icons_linkedinicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\icons.tsx",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_icons_tsx",
+      "_tgt": "icons_githubicon",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_icons_tsx",
+      "target": "icons_githubicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\NotchCard.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_notchcard_tsx",
+      "_tgt": "notchcard_round",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_notchcard_tsx",
+      "target": "notchcard_round",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\NotchCard.tsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_notchcard_tsx",
+      "_tgt": "notchcard_buildgeometry",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_notchcard_tsx",
+      "target": "notchcard_buildgeometry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\NotchCard.tsx",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_src": "notchcard_buildgeometry",
+      "_tgt": "notchcard_round",
+      "source": "notchcard_round",
+      "target": "notchcard_buildgeometry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\ProjectDetail.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_projectdetail_tsx",
+      "_tgt": "projectdetail_projectdetail",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_projectdetail_tsx",
+      "target": "projectdetail_projectdetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\SkillRow.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_skillrow_tsx",
+      "_tgt": "skillrow_skillrow",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_skillrow_tsx",
+      "target": "skillrow_skillrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\Karl\\Documents\\projects\\portfolio\\src\\components\\TransitionOverlay.tsx",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_src": "c_users_karl_documents_projects_portfolio_src_components_transitionoverlay_tsx",
+      "_tgt": "transitionoverlay_transitionoverlay",
+      "source": "c_users_karl_documents_projects_portfolio_src_components_transitionoverlay_tsx",
+      "target": "transitionoverlay_transitionoverlay",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}

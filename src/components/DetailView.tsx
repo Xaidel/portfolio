@@ -1,6 +1,10 @@
+import { useState } from 'react'
+import { createPortal } from 'react-dom'
 import { categories } from '../data/categories'
+import { useCircleTransition } from './CircleTransition'
 import { LogoMark } from './icons'
 import NotchCard from './NotchCard'
+import ProjectDetail from './ProjectDetail'
 
 export default function DetailView({
   onBack,
@@ -11,6 +15,18 @@ export default function DetailView({
   headerHidden?: boolean
   contentRevealed?: boolean
 }) {
+  const [openProject, setOpenProject] = useState<string | null>(null)
+  const { openFrom, closeTo } = useCircleTransition()
+
+  const closeProject = () => {
+    const name = openProject
+    if (!name) return
+    void closeTo(
+      () => document.querySelector(`[data-details-btn="${CSS.escape(name)}"]`),
+      () => setOpenProject(null),
+    )
+  }
+
   const headerStyle = headerHidden ? { opacity: 0 } : undefined
   // The header row has its own bg-neutral-900 stripe and border — the card
   // has no such stripe, so it has to disappear along with the text or it
@@ -119,6 +135,10 @@ export default function DetailView({
                       action={
                         <button
                           type="button"
+                          data-details-btn={proj.name}
+                          onClick={(e) =>
+                            void openFrom(e.currentTarget, () => setOpenProject(proj.name))
+                          }
                           className="flex h-full w-full items-center justify-center rounded-full border border-[#F6CE71]/50 bg-neutral-900 text-sm font-medium whitespace-nowrap text-[#F6CE71] transition-colors hover:border-[#F6CE71] hover:bg-neutral-800"
                         >
                           Details -&gt;
@@ -153,6 +173,10 @@ export default function DetailView({
           </div>
         </div>
       </div>
+      {/* Portaled to body: ancestors here carry transforms during reveal
+          animations, which would re-anchor a fixed overlay to themselves. */}
+      {openProject != null &&
+        createPortal(<ProjectDetail project={openProject} onBack={closeProject} />, document.body)}
     </div>
   )
 }
