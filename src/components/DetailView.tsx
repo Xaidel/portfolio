@@ -58,7 +58,7 @@ export default function DetailView({
         >
           <div
             style={headerRowStyle}
-            className="flex flex-wrap items-center justify-between gap-3 border-b border-neutral-800 bg-neutral-900 px-[clamp(1rem,4vw,1.75rem)] py-[clamp(1.25rem,4vw,2rem)]"
+            className="flex flex-wrap items-center justify-between gap-3 border-b border-neutral-800 bg-neutral-900 px-[clamp(1rem,4vw,1.75rem)] py-[clamp(1.25rem,4vw,2rem)] transition-colors duration-300"
           >
             <div className="flex items-center gap-3">
               <LogoMark

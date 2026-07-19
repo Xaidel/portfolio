@@ -35,20 +35,52 @@ function App() {
   const [clones, setClones] = useState<CloneSpec[] | null>(null)
   const [contentRevealed, setContentRevealed] = useState(false)
   const [cardContentRevealed, setCardContentRevealed] = useState(true)
+  // True during the short fade that precedes either flight. The ref is the
+  // synchronous re-entry guard (keydown closures see stale state); the state
+  // drives pointer-events so the card can't be flipped mid-pre-fade, which
+  // would skew every rect the flight is about to measure.
+  const preflightRef = useRef(false)
+  const [preflight, setPreflight] = useState(false)
   const cardMainRef = useRef<HTMLDivElement>(null)
   const detailWrapRef = useRef<HTMLDivElement>(null)
   const panelElRef = useRef<HTMLElement | null>(null)
   const panelDonePromiseRef = useRef<Promise<unknown>>(Promise.resolve())
 
   const enterDetail = () => {
-    if (phase !== 'card' || flipped) return
+    if (phase !== 'card' || flipped || preflightRef.current) return
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       setPhase('detail')
       setContentRevealed(true)
       return
     }
+    // Mirror of the reverse trip's pre-fade: the card's non-shared chrome
+    // (contacts, hints, location) has no clone standing in for it during the
+    // flight, so fade it out first instead of blinking off with the card the
+    // instant the morph starts.
+    preflightRef.current = true
+    setPreflight(true)
     setContentRevealed(false)
-    setPhase('toDetail')
+    // Flatten any hover tilt now, while the extras fade — the flight is
+    // about to measure every shared rect, and a tilted card would skew all
+    // of them (pointer-events are off, so nothing re-applies it).
+    const tiltEl = cardMainRef.current?.querySelector<HTMLElement>('[data-card-tilt]')
+    if (tiltEl) tiltEl.style.transform = ''
+    const extraEls = cardMainRef.current?.querySelectorAll<HTMLElement>('[data-card-extra]')
+    const fadeOut =
+      extraEls && extraEls.length > 0
+        ? animate(extraEls, {
+            opacity: [1, 0],
+            translateY: [0, 10],
+            duration: 250,
+            ease: 'inQuad',
+          }).then()
+        : Promise.resolve()
+    fadeOut.then(() => {
+      preflightRef.current = false
+      setPreflight(false)
+      setCardContentRevealed(false)
+      setPhase('toDetail')
+    })
   }
 
   // The reverse trip: fade the project content out first (mirrors stage 2
@@ -56,7 +88,7 @@ function App() {
   // machinery below, run backwards — panel shrinks back to the card's rect,
   // logo/name/title/tagline fly back to their card positions.
   const backToCard = () => {
-    if (phase !== 'detail') return
+    if (phase !== 'detail' || preflightRef.current) return
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       setClones(null)
       setContentRevealed(false)
@@ -64,6 +96,8 @@ function App() {
       setPhase('card')
       return
     }
+    preflightRef.current = true
+    setPreflight(true)
     setCardContentRevealed(false)
     const restEls = detailWrapRef.current?.querySelectorAll<HTMLElement>('[data-rest-content]')
     const fadeOut =
@@ -76,6 +110,8 @@ function App() {
           }).then()
         : Promise.resolve()
     fadeOut.then(() => {
+      preflightRef.current = false
+      setPreflight(false)
       setContentRevealed(false)
       setPhase('toCard')
     })
@@ -209,6 +245,7 @@ function App() {
   const cardMounted = phase !== 'detail'
   const detailMounted = phase !== 'card'
   const animating = phase === 'toDetail' || phase === 'toCard'
+  const inputBlocked = animating || preflight
 
   return (
     <>
@@ -217,14 +254,14 @@ function App() {
           ref={cardMainRef}
           style={{ opacity: cardVisible ? 1 : 0 }}
           className={`fixed inset-0 flex items-center justify-center overflow-hidden bg-black p-4 ${
-            animating ? 'pointer-events-none' : ''
+            inputBlocked ? 'pointer-events-none' : ''
           }`}
         >
           <Card flipped={flipped} onFlippedChange={setFlipped} contentRevealed={cardContentRevealed} />
         </main>
       )}
       {detailMounted && (
-        <div ref={detailWrapRef} className={animating ? 'pointer-events-none' : ''}>
+        <div ref={detailWrapRef} className={inputBlocked ? 'pointer-events-none' : ''}>
           <DetailView onBack={backToCard} headerHidden={animating} contentRevealed={contentRevealed} />
         </div>
       )}

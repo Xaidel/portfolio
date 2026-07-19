@@ -81,6 +81,7 @@ export default function Card({
     <div className="relative aspect-[4/3] w-[clamp(300px,88vw,620px)] max-h-[88svh] max-w-full [perspective:1600px] sm:aspect-[3/2] lg:aspect-[7/4]">
       <div
         ref={tiltRef}
+        data-card-tilt
         onMouseMove={handleMouseMove}
         onMouseLeave={resetTilt}
         className="group relative h-full w-full [transform-style:preserve-3d]"
