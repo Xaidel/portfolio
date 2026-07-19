@@ -1,5 +1,6 @@
 import { categories } from '../data/categories'
 import { LogoMark } from './icons'
+import NotchCard from './NotchCard'
 
 export default function DetailView({
   onBack,
@@ -111,9 +112,18 @@ export default function DetailView({
 
                 <div className="flex flex-col gap-4">
                   {cat.projects.map((proj) => (
-                    <div
+                    <NotchCard
                       key={proj.name}
-                      className="relative rounded-2xl border border-neutral-800 bg-neutral-900 p-[clamp(0.875rem,3vw,1.25rem)] pb-[clamp(3rem,7vw,3.5rem)]"
+                      className="rounded-2xl border border-neutral-800 bg-neutral-900 p-[clamp(0.875rem,3vw,1.25rem)] pb-[clamp(4.5rem,9vw,5rem)]"
+                      notch={{ buttonWidth: 128, buttonHeight: 42 }}
+                      action={
+                        <button
+                          type="button"
+                          className="flex h-full w-full items-center justify-center rounded-full border border-[#F6CE71]/50 bg-neutral-900 text-sm font-medium whitespace-nowrap text-[#F6CE71] transition-colors hover:border-[#F6CE71] hover:bg-neutral-800"
+                        >
+                          Details -&gt;
+                        </button>
+                      }
                     >
                       <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
                         <p className="text-base font-semibold text-neutral-300">{proj.name}</p>
@@ -135,15 +145,7 @@ export default function DetailView({
                           <dd className="inline">{proj.outcome}</dd>
                         </div>
                       </dl>
-                      <div className="absolute -right-px -bottom-px rounded-tl-2xl border border-r-0 border-b-0 border-neutral-800 bg-neutral-950 p-2">
-                        <button
-                          type="button"
-                          className="rounded-full border border-[#F6CE71]/50 bg-neutral-900 px-4 py-1.5 text-xs font-medium whitespace-nowrap text-[#F6CE71] transition-colors hover:border-[#F6CE71] hover:bg-neutral-800"
-                        >
-                          Details -&gt;
-                        </button>
-                      </div>
-                    </div>
+                    </NotchCard>
                   ))}
                 </div>
               </div>
