@@ -25,7 +25,7 @@ function App() {
 
   return (
     <main className="flex h-svh w-full items-center justify-center overflow-hidden bg-black p-4">
-      <Card flipped={flipped} onFlippedChange={setFlipped} onViewAll={() => setView('detail')} />
+      <Card flipped={flipped} onFlippedChange={setFlipped} />
     </main>
   )
 }
