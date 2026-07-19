@@ -62,6 +62,15 @@ export function WebsiteIcon({ className = 'h-4 w-4' }: IconProps) {
   )
 }
 
+export function PinIcon({ className = 'h-4 w-4' }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z" />
+      <circle cx="12" cy="10" r="2.5" />
+    </svg>
+  )
+}
+
 export function LinkedInIcon({ className = 'h-4 w-4' }: IconProps) {
   return (
     <svg {...base} className={className}>

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { createPortal } from 'react-dom'
 import { categories } from '../data/categories'
 import { useCircleTransition } from './CircleTransition'
-import { LogoMark } from './icons'
+import { EmailIcon, GitHubIcon, LinkedInIcon, LogoMark, MobileIcon, PinIcon } from './icons'
 import NotchCard from './NotchCard'
 import ProjectDetail from './ProjectDetail'
 
@@ -92,28 +92,44 @@ export default function DetailView({
             </p>
           </div>
 
-          <div data-rest-content style={restStyle} className="flex flex-wrap gap-4 border-b border-neutral-800 px-[clamp(1rem,4vw,1.75rem)] py-4 text-sm text-neutral-500">
-            <a href="mailto:abechuelak@gmail.com" className="hover:text-neutral-300">
+          <div
+            data-rest-content
+            style={restStyle}
+            className="flex flex-wrap items-center gap-x-6 gap-y-2.5 border-b border-neutral-800 px-[clamp(1rem,4vw,1.75rem)] py-4 text-sm"
+          >
+            <a
+              href="mailto:abechuelak@gmail.com"
+              className="inline-flex items-center gap-2 rounded-sm text-[#E5D0AC] outline-none transition-colors hover:text-[#F6CE71] focus-visible:ring-1 focus-visible:ring-[#F6CE71]"
+            >
+              <EmailIcon className="h-3.5 w-3.5 shrink-0 text-[#F6CE71]" />
               abechuelak@gmail.com
             </a>
-            <span>09632530577</span>
+            <span className="inline-flex items-center gap-2 text-neutral-400">
+              <MobileIcon className="h-3.5 w-3.5 shrink-0 text-[#F6CE71]/60" />
+              09632530577
+            </span>
             <a
               href="https://github.com/Xaidel"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-neutral-300"
+              className="group inline-flex items-center gap-2 rounded-sm text-neutral-400 outline-none transition-colors hover:text-[#E5D0AC] focus-visible:ring-1 focus-visible:ring-[#F6CE71]"
             >
+              <GitHubIcon className="h-3.5 w-3.5 shrink-0 text-[#F6CE71]/60 transition-colors group-hover:text-[#F6CE71]" />
               github.com/Xaidel
             </a>
             <a
               href="https://www.linkedin.com/in/karlabechuela"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-neutral-300"
+              className="group inline-flex items-center gap-2 rounded-sm text-neutral-400 outline-none transition-colors hover:text-[#E5D0AC] focus-visible:ring-1 focus-visible:ring-[#F6CE71]"
             >
+              <LinkedInIcon className="h-3.5 w-3.5 shrink-0 text-[#F6CE71]/60 transition-colors group-hover:text-[#F6CE71]" />
               linkedin.com/in/karlabechuela
             </a>
-            <span>Naga City, Philippines</span>
+            <span className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.08em] text-neutral-600 sm:ml-auto">
+              <PinIcon className="h-3 w-3 shrink-0" />
+              Naga City, Philippines
+            </span>
           </div>
 
           <div data-rest-content style={restStyle}>
