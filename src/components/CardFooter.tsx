@@ -6,10 +6,13 @@ export default function CardFooter() {
     <div className="flex w-full items-end justify-between">
       <div className="flex min-w-0 flex-1 flex-col items-start gap-[clamp(0.3125rem,1.3vw,0.5rem)]">
         <div className="hidden sm:block">
-          <p className="text-[clamp(0.8125rem,2.6vw,1rem)] font-semibold leading-tight text-[#E5D0AC]">
+          <p
+            data-shared="name"
+            className="text-[clamp(0.8125rem,2.6vw,1rem)] font-semibold leading-tight text-[#E5D0AC]"
+          >
             Karl Abechuela
           </p>
-          <p className="text-[clamp(0.5625rem,1.7vw,0.75rem)] text-[#E5D0AC]">
+          <p data-shared="title" className="text-[clamp(0.5625rem,1.7vw,0.75rem)] text-[#E5D0AC]">
             Software Engineer, AI &amp; Automation
           </p>
         </div>

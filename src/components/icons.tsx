@@ -10,9 +10,12 @@ const base = {
   'aria-hidden': true,
 }
 
-export function LogoMark({ className = 'h-6 w-6' }: IconProps) {
+export function LogoMark({
+  className = 'h-6 w-6',
+  ...rest
+}: IconProps & React.SVGProps<SVGSVGElement>) {
   return (
-    <svg {...base} viewBox="0 0.5 24 24" className={className}>
+    <svg {...base} viewBox="0 0.5 24 24" className={className} {...rest}>
       <circle cx="6" cy="7" r="2.25" />
       <circle cx="18" cy="7" r="2.25" />
       <circle cx="12" cy="18" r="2.25" />

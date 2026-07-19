@@ -5,7 +5,10 @@ import FlipHint from './FlipHint'
 
 export default function CardFront() {
   return (
-    <div className="relative flex h-full w-full flex-col justify-between overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-950 p-[clamp(0.75rem,4vw,1.75rem)] shadow-2xl shadow-black/40">
+    <div
+      data-shared="panel"
+      className="relative flex h-full w-full flex-col justify-between overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-950 p-[clamp(0.75rem,4vw,1.75rem)] shadow-2xl shadow-black/40"
+    >
       <CardHeader />
       <div aria-hidden="true" className="flex-1" />
       <CardFooter />
