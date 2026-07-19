@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import { createPortal } from 'react-dom'
-import { categories } from '../data/categories'
+import { about, expertise, principles } from '../data/profile'
 import { useCircleTransition } from './CircleTransition'
+import DetailSection from './DetailSection'
+import FeaturedProjects from './FeaturedProjects'
 import { EmailIcon, GitHubIcon, LinkedInIcon, LogoMark, MobileIcon, PinIcon } from './icons'
-import NotchCard from './NotchCard'
 import ProjectDetail from './ProjectDetail'
+import { skillIcons } from './skillIcons'
+import Timeline from './Timeline'
 
 export default function DetailView({
   onBack,
@@ -133,59 +136,64 @@ export default function DetailView({
           </div>
 
           <div data-rest-content style={restStyle}>
-            {categories.map((cat) => (
-              <div
-                key={cat.id}
-                className="border-b border-neutral-800 px-[clamp(1rem,4vw,1.75rem)] py-[clamp(1.25rem,4vw,1.75rem)] last:border-b-0"
-              >
-                <h2 className="mb-4 font-mono text-lg font-bold uppercase tracking-[0.08em] text-[#E5D0AC]">
-                  {cat.label}
-                </h2>
-
-                <div className="flex flex-col gap-4">
-                  {cat.projects.map((proj) => (
-                    <NotchCard
-                      key={proj.name}
-                      className="rounded-2xl border border-neutral-800 bg-neutral-900 p-[clamp(0.875rem,3vw,1.25rem)] pb-[clamp(4.5rem,9vw,5rem)]"
-                      notch={{ buttonWidth: 128, buttonHeight: 42 }}
-                      action={
-                        <button
-                          type="button"
-                          data-details-btn={proj.name}
-                          onClick={(e) =>
-                            void openFrom(e.currentTarget, () => setOpenProject(proj.name))
-                          }
-                          className="flex h-full w-full items-center justify-center rounded-full border border-[#F6CE71]/50 bg-neutral-900 text-sm font-medium whitespace-nowrap text-[#F6CE71] transition-colors hover:border-[#F6CE71] hover:bg-neutral-800"
-                        >
-                          Details -&gt;
-                        </button>
-                      }
-                    >
-                      <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
-                        <p className="text-base font-semibold text-neutral-300">{proj.name}</p>
-                        <p className="text-right text-xs text-[#F6CE71]">
-                          {proj.skills.join(' · ')}
-                        </p>
-                      </div>
-                      <dl className="grid gap-1.5 text-sm leading-relaxed text-neutral-500">
-                        <div>
-                          <dt className="inline font-medium text-[#F6CE71]">Problem — </dt>
-                          <dd className="inline">{proj.problem}</dd>
-                        </div>
-                        <div>
-                          <dt className="inline font-medium text-[#F6CE71]">Decision — </dt>
-                          <dd className="inline">{proj.decision}</dd>
-                        </div>
-                        <div>
-                          <dt className="inline font-medium text-[#F6CE71]">Outcome — </dt>
-                          <dd className="inline">{proj.outcome}</dd>
-                        </div>
-                      </dl>
-                    </NotchCard>
-                  ))}
-                </div>
+            <DetailSection title="About">
+              <div className="flex max-w-prose flex-col gap-3 text-sm leading-relaxed text-neutral-400">
+                {about.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
               </div>
-            ))}
+            </DetailSection>
+
+            <DetailSection title="Featured Projects">
+              <FeaturedProjects
+                onOpen={(name, el) => void openFrom(el, () => setOpenProject(name))}
+              />
+            </DetailSection>
+
+            <DetailSection title="Engineering Principles">
+              <ul className="grid gap-2.5 text-sm text-neutral-400 sm:grid-cols-2">
+                {principles.map((p) => (
+                  <li key={p} className="flex items-baseline gap-2.5">
+                    <span aria-hidden className="text-xs text-[#F6CE71]">
+                      ▪
+                    </span>
+                    {p}
+                  </li>
+                ))}
+              </ul>
+            </DetailSection>
+
+            <DetailSection title="Technical Expertise">
+              <div className="grid gap-x-6 gap-y-5 sm:grid-cols-2 lg:grid-cols-3">
+                {expertise.map((group) => (
+                  <div key={group.label}>
+                    <h3 className="mb-2 text-xs font-semibold uppercase tracking-[0.1em] text-[#F6CE71]">
+                      {group.label}
+                    </h3>
+                    <ul className="flex flex-wrap gap-1.5">
+                      {group.skills.map((skill) => {
+                        const Icon = skillIcons[skill]
+                        return (
+                          <li
+                            key={skill}
+                            className="flex items-center gap-1.5 rounded-full border border-neutral-800 bg-neutral-900 px-2.5 py-1 text-xs text-neutral-400"
+                          >
+                            {Icon && (
+                              <Icon aria-hidden className="h-3 w-3 shrink-0 text-[#F6CE71]/60" />
+                            )}
+                            {skill}
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </DetailSection>
+
+            <DetailSection title="Timeline">
+              <Timeline />
+            </DetailSection>
           </div>
         </div>
       </div>

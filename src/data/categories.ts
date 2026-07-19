@@ -53,7 +53,7 @@ export const categories: CategoryDef[] = [
   {
     id: 'ai',
     label: 'AI',
-    skills: ['eino', 'RAG', 'Vector search', 'Pinecone', 'Qdrant', 'Apache Parquet'],
+    skills: ['eino', 'RAG', 'Vector search', 'Pinecone', 'Qdrant'],
     projects: [
       {
         name: 'AI systems — in progress',
@@ -61,7 +61,7 @@ export const categories: CategoryDef[] = [
         decision:
           'Building RAG pipelines and agents with the eino framework, backed by Pinecone and Qdrant for vector search.',
         outcome: 'Stack is in place; a full case study is coming soon.',
-        skills: ['eino', 'RAG', 'Vector search', 'Pinecone', 'Qdrant', 'Apache Parquet'],
+        skills: ['eino', 'RAG', 'Vector search', 'Pinecone', 'Qdrant'],
       },
     ],
   },
