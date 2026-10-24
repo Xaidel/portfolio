@@ -1,3 +1,6 @@
+import { getCaseStudy } from '../data/caseStudies'
+import CaseStudy from './CaseStudy'
+
 export default function ProjectDetail({
   project,
   onBack,
@@ -5,6 +8,12 @@ export default function ProjectDetail({
   project: string
   onBack: () => void
 }) {
+  const study = getCaseStudy(project)
+
+  if (study) {
+    return <CaseStudy study={study} onBack={onBack} />
+  }
+
   return (
     <div className="fixed inset-0 z-[600] flex items-center justify-center overflow-y-auto bg-neutral-950 px-6 text-neutral-300">
       <div data-circle-reveal className="flex max-w-md flex-col items-center gap-6 text-center">

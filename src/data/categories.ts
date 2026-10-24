@@ -22,14 +22,14 @@ export const categories: CategoryDef[] = [
     skills: ['Go', 'REST', 'React', 'TypeScript'],
     projects: [
       {
-        name: 'IronOS — Gym Management System + Companion App',
+        name: 'Pharmassist — Medicine Price & Availability Map',
         problem:
-          'Gyms track members and progress on paper or spreadsheets; members have no visibility into their own history or reason to stay engaged.',
+          'Patients in Naga City pay out of pocket for medicines and have no way to know, before traveling, which nearby pharmacy has a drug in stock or at the lowest total price.',
         decision:
-          'Built a gym management system paired with a gamified mobile app — Go backend over a REST API, React/TypeScript frontend — members log workouts and diet, keep progress records, and share achievements socially.',
+          'Built a mobile-first PWA — TanStack Start, React 19, and TypeScript over a Postgres backend, shipped with Docker and Caddy — that ranks pharmacies by the total shelf price of a complete medicine list on a map-first results screen, with typo-tolerant search, MDRP price-ceiling checks, prescription OCR, and pharmacy directions.',
         outcome:
-          'One system now runs both the gym’s member management and a live member-facing app with social workout sharing.',
-        skills: ['Go', 'REST', 'React', 'TypeScript'],
+          'A seeded-data pilot validates the full search-to-directions loop across 50 medicines and 10 Naga pharmacies, with MDRP compliance and privacy controls built in from day one.',
+        skills: ['TanStack Start', 'React', 'TypeScript', 'PostgreSQL'],
       },
     ],
   },
@@ -53,15 +53,17 @@ export const categories: CategoryDef[] = [
   {
     id: 'ai',
     label: 'AI',
-    skills: ['eino', 'RAG', 'Vector search', 'Pinecone', 'Qdrant'],
+    skills: ['TanStack Start', 'React', 'TypeScript', 'Docker', 'PostgreSQL'],
     projects: [
       {
-        name: 'AI systems — in progress',
-        problem: 'No dedicated AI product shipped yet.',
+        name: 'Teach — AI Learning Platform',
+        problem:
+          'Learners paste AI-generated code they don’t fully understand, but passive reading doesn’t build the skills — they need active, evaluated practice.',
         decision:
-          'Building RAG pipelines and agents with the eino framework, backed by Pinecone and Qdrant for vector search.',
-        outcome: 'Stack is in place; a full case study is coming soon.',
-        skills: ['eino', 'RAG', 'Vector search', 'Pinecone', 'Qdrant'],
+          'Built a platform that turns AI-generated code into active practice — an AI Teacher explains concepts and generates exercises, while a real sandboxed compiler (Rust, Go, Python in isolated Docker containers) and a deterministic evaluation gate grade each submission.',
+        outcome:
+          'The multi-language sandbox is live: submissions are evaluated by each language’s real test toolchain — cargo nextest, go test, pytest — with enforced resource limits, and pass/fail results persisted in Postgres.',
+        skills: ['TanStack Start', 'React', 'TypeScript', 'Docker', 'PostgreSQL'],
       },
     ],
   },
